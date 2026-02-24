@@ -36,9 +36,31 @@ public class Functions {
         System.out.println("removeFirst (expect 900):  " + d.removeFirst());
         System.out.println("AFTER TASK 3:              " + d);
 
-        
-        //TEST TASK 4: REMOVEITEM
-        System.out.println("\nTESTING TASK 4: ");
+               
+        //TEST TASK 4: PRIORITY QUEUE
+        System.out.println("\nTESTING TASK 4a: ");
+        MyArrayDeque<Integer> p1 = new MyArrayDeque<>();        
+        p1.addPriority(60);
+        p1.addPriority(50);
+        p1.addPriority(90);
+        p1.addPriority(80);   
+        p1.addPriority(10); 
+        p1.addPriority(-40);
+        System.out.println("AFTER TASK 4a       " + p1);
+
+        //TEST TASK 4: PRIORITY QUEUE
+        System.out.println("\nTESTING TASK 4b: ");
+        MyArrayDeque<Student> p2 = new MyArrayDeque<>();
+        p2.addPriority(new Student(45, "Sam", "Yosemite", "Minor"));  
+        p2.addPriority(new Student(21, "Suzuki", "Keiko", "Chemistry"));      
+        p2.addPriority(new Student(15, "Smith", "Bob", "Chemistry"));
+        p2.addPriority(new Student(16, "Smith", "Alex", "Music"));
+
+        System.out.println("AFTER TASK 4b       " + p2);
+
+                
+        //TEST TASK 5: REMOVEITEM
+        System.out.println("\nTESTING TASK 5: ");
         d.removeItem(600);
         System.out.println("removeItem(600):   " + d);
 
@@ -48,19 +70,6 @@ public class Functions {
 
         d.removeItem(300);
         System.out.println("removeItem(300):   " + d); 
-        System.out.println("AFTER TASK 4       " +d);
-       
-         
-        //TEST TASK 5: PRIORITY QUEUE
-        System.out.println("\nTESTING TASK 5: ");
-        MyArrayDeque<Integer> p1 = new MyArrayDeque<>();        
-        p1.addPriority(60);
-        p1.addPriority(50);
-        p1.addPriority(90);
-        p1.addPriority(80);   
-        p1.addPriority(10); 
-        p1.addPriority(-40);
-        System.out.println("AFTER TASK 5       " + p1);
 
     }
 

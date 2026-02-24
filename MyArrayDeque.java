@@ -146,7 +146,20 @@ public class MyArrayDeque<E> {
     }
 
     
-    //TASK 4: REMOVEITEM
+    //TASK 4: ADDPRIORITY
+    //PRE:  accepts new item to add
+    //      assumes all previous elements were 
+    //      added as priority
+    //POST: adds new item & places based on
+    //      highest value
+    @SuppressWarnings("unchecked")
+    public void addPriority(E e){
+
+        System.out.println("TASK 4: ADD PRIORITY NEEDS TO BE CODED");
+
+    }
+    
+    //TASK 5: REMOVEITEM
     //PRE:  accepts an item to remove
     //POST: removes item from queue, leaving
     //      remaining items in order
@@ -156,19 +169,7 @@ public class MyArrayDeque<E> {
             throw new IllegalStateException("Deque is empty");
         }
 
-        System.out.println("TASK 4: REMOVE ITEM NEEDS TO BE CODED");
+        System.out.println("TASK 5: REMOVE ITEM NEEDS TO BE CODED");
     }
 
-    //TASK 5: ADDPRIORITY
-    //PRE:  accepts new item to add
-    //      assumes all previous elements were 
-    //      added as priority
-    //POST: adds new item & places based on
-    //      highest value
-    @SuppressWarnings("unchecked")
-    public void addPriority(E e){
-
-        System.out.println("TASK 5: ADD PRIORITY NEEDS TO BE CODED");
-
-    }
 }
