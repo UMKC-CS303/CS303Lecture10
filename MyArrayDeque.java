@@ -1,5 +1,3 @@
-import java.util.*;
-//public class MyArrayDeque<E> implements MyDeque<E> {
 public class MyArrayDeque<E> {
 
     private E[] data;
@@ -81,6 +79,9 @@ public class MyArrayDeque<E> {
     }
 
 
+    //PRE:  none
+    //POST: if empty, throws illegal state
+    //      else returns the first element
     // Peek front
     //E peekFirst();
     public E getFirst() {
@@ -91,6 +92,9 @@ public class MyArrayDeque<E> {
     }
         
 
+    //PRE:  none
+    //POST: if empty, throws illegal state
+    //      else returns the last element
     // Peek back
     //SIMILAR: E peekLast();
     public E getLast() {
@@ -115,14 +119,22 @@ public class MyArrayDeque<E> {
         System.out.println("TASK 1: RESIZE NEEDS TO BE CODED");
     }
 
+    //PRE:  none
+    //POST: returns the size of the arraydeque
     public int size() {
         return size;
     }
 
+    //PRE:  none
+    //POST: returns true if the arraydeque is empty
+    //      false if not
     public boolean isEmpty() {
         return size == 0;
     }
-    
+
+    //PRE:  none
+    //POST: returns a string representing the
+    //      arraydeque contents
     @Override
     public String toString() {
         if (isEmpty()) {
